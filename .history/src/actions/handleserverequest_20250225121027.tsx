@@ -1,5 +1,7 @@
 'use server'
+
 import { URL_USUARIOS, URL_RECUPERAR_SENHA  } from "@/app/ConfigRequest/ConfigRequest";
+
 import { nextAuthOptions } from "@/app/api/auth/[...nextauth]/authOptions";
 import { apiRequest } from "@/functions/ApiRequest";
 import { getServerSession } from "next-auth";
@@ -25,3 +27,12 @@ export async function recuperarSenha(email: string) {
   const dados = await apiRequest({ url: URL_RECUPERAR_SENHA, method: 'POST', token: session?.user.token_acesso, body: { email: email } })
   return dados
 }
+
+
+
+  
+
+
+
+
+
