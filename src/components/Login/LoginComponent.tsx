@@ -8,7 +8,7 @@ import { TituloSessao } from '../genericos/TituloSessao/TituloSessao';
 
 
 
-export default function Login() {
+export default function LoginComponent() {
   return (
     <Grid container component="main" sx={{ height: '100vh' }}>
       <CssBaseline />
