@@ -140,6 +140,7 @@ export const formatPlaca = (value: string):string | null => {
 };
 
 
+
 export const formatarParaDatetimeLocal = (data: string): string => {
   if (!data) {
     // Se data for null, undefined ou uma string vazia, retornar uma string vazia

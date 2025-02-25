@@ -139,6 +139,18 @@ export const formatPlaca = (value: string):string | null => {
 
 };
 
+// export const formatarParaDatetimeLocal=(data: string): string  =>{
+//   const partes = data.split(' às ');
+//   const dataParte = partes[0];
+//   const horaParte = partes[1];
+
+//   const [dia, mes, ano] = dataParte.split('/');
+//   const [hora, minuto] = horaParte.split(':');
+
+//   const datetimeLocal = `${ano}-${mes.padStart(2, '0')}-${dia.padStart(2, '0')}T${hora}:${minuto}`;
+
+//   return datetimeLocal;
+// } 
 
 export const formatarParaDatetimeLocal = (data: string): string => {
   if (!data) {

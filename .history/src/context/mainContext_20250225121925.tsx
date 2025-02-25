@@ -1,5 +1,6 @@
 'use client'
 import { PropsColaborador, PropsMessagem, Usuario } from '@/Types/Types';
+
 import { LOGIN } from '@/app/rotasPathname/rotasPathname';
 
 import { signOut, useSession } from 'next-auth/react';
